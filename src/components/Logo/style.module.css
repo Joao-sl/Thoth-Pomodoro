@@ -1,0 +1,22 @@
+.logo {
+  gap: 1rem;
+}
+
+.logoLink {
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary);
+  transition: 0.3s ease-in-out;
+}
+
+.logoLink:hover {
+  filter: brightness(80%);
+}
+
+.logoLink img {
+  width: 12rem;
+  border: 0.2rem solid var(--primary);
+  border-radius: 50%;
+  box-shadow: 0rem 0rem 10rem -0.8rem var(--primary);
+}

@@ -1,35 +1,52 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { ContentWrapper } from './components/ContentWrapper';
+import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
-function App() {
-  const [count, setCount] = useState(0)
+import { CountDown } from './components/CountDown';
+import { PlayIcon } from 'lucide-react';
+import { DefaultInput } from './components/DefaultInput';
+import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
 
+import './style/theme.css';
+import './style/global.css';
+import { Footer } from './components/Footer';
+
+export function App() {
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <ContentWrapper>
+        <Logo />
 
-export default App
+        <Menu />
+
+        <CountDown />
+
+        <form action='' className='taskForm'>
+          <div className='taskContent'>
+            <DefaultInput
+              type='text'
+              id='task-input'
+              placeholder='Type your task'
+              labelText='Task'
+            />
+          </div>
+
+          <div className='taskContent'>
+            <p>Time to rest, 5 minutes</p>
+          </div>
+
+          <div className='taskContent'>
+            <Cycles />
+          </div>
+
+          <div className='taskContent'>
+            <DefaultButton icon={<PlayIcon />} color='start' />
+          </div>
+        </form>
+
+        <Footer />
+      </ContentWrapper>
+    </>
+  );
+}

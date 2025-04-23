@@ -1,0 +1,22 @@
+.cyclesWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cyclesIcons {
+  display: flex;
+  gap: 1rem;
+}
+
+.target svg {
+  color: #17bd5c;
+}
+
+.smallBreak svg {
+  color: #FFD700;
+}
+
+.longBreak svg {
+  color: #f75419;
+}

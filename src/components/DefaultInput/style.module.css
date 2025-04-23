@@ -1,0 +1,26 @@
+.defaultInput {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: 0.2rem solid transparent;
+  border-radius: 0.4rem;
+  border-bottom: 0.2rem solid var(--primary);
+  outline: none;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+.defaultInput:focus {
+  border: 0.2rem solid var(--primary);
+  border-radius: 1rem;
+}
+
+.defaultInput:disabled {
+  border-bottom: 0.2rem solid var(--disabled);
+  color: var(--text-muted);
+}
+
+.defaultLabel {
+  font-size: 1.8rem;
+}

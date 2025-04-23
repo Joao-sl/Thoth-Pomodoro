@@ -1,0 +1,25 @@
+.defaultButton {
+  border: none;
+  border-radius: 0.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0.6rem 11rem;
+  transition: 0.3s ease-in-out;
+}
+
+.defaultButton svg {
+  height: 3rem;
+  width: 3rem;
+}
+
+.defaultButton:hover {
+  filter: brightness(80%);
+}
+
+.start {
+  background-color: var(--primary);
+}
+
+.stop {
+  background-color: rgb(199, 25, 25);
+}
