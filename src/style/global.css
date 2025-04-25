@@ -35,3 +35,15 @@ body {
   text-align: center;
   gap: 1rem;
 }
+
+.target svg {
+  color: var(--cycles-target);
+}
+
+.smallBreak svg {
+  color: var(--cycles-small-break);
+}
+
+.longBreak svg {
+  color: red;
+}

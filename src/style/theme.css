@@ -17,7 +17,7 @@
   --primary-light: #ffb74d;
 
 
-  --link-color: #10b981;
+  --link-color: #cf6b07;
   --link-hover: #0b8a60;
 
   --success: #27e90d;
@@ -38,4 +38,31 @@
 
   --disabled: #555f7d;
   --text-disabled: #aab3cc;
+
+  --cycles-target: #17bd5c;
+  --cycles-small-break: #FFD700;
+  --cycles-long-break: #f75419;
+
+  --logo-bg-color: transparent
+}
+
+:root[data-theme='light'] {
+  --gray-100: #0a0f1a;
+  --gray-200: #181f2e;
+  --gray-300: #272f43;
+  --gray-400: #363d56;
+  --gray-500: #454f6a;
+  --gray-600: #555f7d;
+  --gray-700: #aab3cc;
+  --gray-800: #cdd3e1;
+  --gray-900: #e6e9f0;
+
+  --text-default: #0a0f1a;
+  --text-muted: #272f43;
+
+  --text-default: #1b1a1a;
+
+  --cycles-small-break: #9e5705;
+
+  --logo-bg-color: var(--primary)
 }

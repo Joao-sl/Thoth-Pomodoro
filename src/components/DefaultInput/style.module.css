@@ -1,7 +1,7 @@
 .defaultInput {
   text-align: center;
   font-size: 1.6rem;
-  color: #FFFFFF;
+  color: var(--text-default);
   background-color: transparent;
   border: 0.2rem solid transparent;
   border-radius: 0.4rem;

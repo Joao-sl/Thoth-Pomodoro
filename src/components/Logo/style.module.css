@@ -19,4 +19,5 @@
   border: 0.2rem solid var(--primary);
   border-radius: 50%;
   box-shadow: 0rem 0rem 10rem -0.8rem var(--primary);
+  background-color: var(--logo-bg-color);
 }

@@ -10,13 +10,13 @@
 }
 
 .target svg {
-  color: #17bd5c;
+  color: var(--cycles-target);
 }
 
 .smallBreak svg {
-  color: #FFD700;
+  color: var(--cycles-small-break);
 }
 
 .longBreak svg {
-  color: #f75419;
+  color: var(--cycles-long-break);
 }
