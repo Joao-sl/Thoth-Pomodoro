@@ -9,14 +9,14 @@
   gap: 1rem;
 }
 
-.target svg {
+.focusTime svg {
   color: var(--cycles-target);
 }
 
-.smallBreak svg {
+.smallBreakTime svg {
   color: var(--cycles-small-break);
 }
 
-.longBreak svg {
+.longBreakTime svg {
   color: var(--cycles-long-break);
 }
