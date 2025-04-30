@@ -1,8 +1,9 @@
 import { Coffee, RockingChair, TargetIcon } from 'lucide-react';
 
-import styles from './style.module.css';
 import { useTaskContext } from '../../contexts/TaskContext/useTaskContext';
 import { getNextCycleType } from '../../utils/getNextCycleType';
+
+import styles from './style.module.css';
 
 export function Cycles() {
   const cycleIconsMap = {

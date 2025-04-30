@@ -9,7 +9,7 @@ import { getNextCycle } from '../../utils/getNextCycle';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 import { TaskActionTypes } from '../../contexts/TaskContext/TaskActions';
 import { CycleTipUser } from '../CycleTipUser';
-import { showMessage } from '../../adapters/toustifyAdapter';
+import { showMessage } from '../../adapters/toastifyAdapter';
 
 export function MainForm() {
   const { state, dispatch } = useTaskContext();

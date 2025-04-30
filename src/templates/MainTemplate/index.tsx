@@ -12,11 +12,8 @@ export function MainTemplate({ children }: MainTemplateProps) {
     <>
       <ContentWrapper>
         <Logo />
-
         <Menu />
-
         {children}
-
         <Footer />
       </ContentWrapper>
     </>
