@@ -5,5 +5,9 @@ type DefaultHtmlProps = {
 };
 
 export function DefaultHtml({ children }: DefaultHtmlProps) {
-  return <div className={styles.defaultHtml}>{children}</div>;
+  return (
+    <div className={styles.flexCentralized}>
+      <div className={`${styles.defaultHtml}`}>{children}</div>
+    </div>
+  );
 }

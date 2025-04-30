@@ -1,6 +1,14 @@
+.flexCentralized {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .defaultHtml {
   max-width: 70rem;
   margin-top: 2rem;
+
 }
 
 .defaultHtml h1 {

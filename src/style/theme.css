@@ -9,19 +9,17 @@
   --gray-800: #181f2e;
   --gray-900: #0a0f1a;
 
-  /* --primary-light: #f79707;
-  --primary: #e68e0c;
-  --primary-dark: #b87209; */
   --primary: #f57c00;
   --primary-dark: #cf6b07;
   --primary-light: #ffb74d;
 
+  --primary-font: 'Lexend', sans-serif;
 
   --link-color: #cf6b07;
   --link-hover: #0b8a60;
 
   --success: #27e90d;
-  --warning: #f0ec0a;
+  --warning: #FFBC11;
   --error: #e41313;
   --info: #0a80ee;
 
@@ -43,7 +41,20 @@
   --cycles-small-break: #FFD700;
   --cycles-long-break: #f75419;
 
-  --logo-bg-color: transparent
+  --logo-bg-color: transparent;
+
+  /* Toastify Styles */
+  --toastify-font-family: var(--primary-font);
+
+  /* Toastify Theme */
+  --toastify-color-light: var(--text-default);
+  --toastify-color-dark: var(--text-default);
+  --toastify-color-success: var(--success);
+  --toastify-color-error: var(--error);
+  --toastify-color-warning: var(--warning);
+  --toastify-color-info: var(--info);
+  --toastify-text-color-light: #1d2b49;
+  --toastify-text-color-dark: #c5cde0;
 }
 
 :root[data-theme='light'] {
@@ -64,5 +75,8 @@
 
   --cycles-small-break: #9e5705;
 
-  --logo-bg-color: var(--primary)
+  --logo-bg-color: var(--primary);
+
+  --toastify-text-color-light: #e6e9f0;
+  --toastify-text-color-dark: #e6e9f0;
 }

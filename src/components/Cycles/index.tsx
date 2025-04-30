@@ -1,7 +1,7 @@
 import { Coffee, RockingChair, TargetIcon } from 'lucide-react';
 
 import styles from './style.module.css';
-import { UserTaskContext } from '../../contexts/TaskContext/useTaskContext';
+import { useTaskContext } from '../../contexts/TaskContext/useTaskContext';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 
 export function Cycles() {
@@ -17,7 +17,7 @@ export function Cycles() {
     longBreakTime: 'Time to Long Break',
   };
 
-  const { state } = UserTaskContext();
+  const { state } = useTaskContext();
   const cycleNumb = Array.from({ length: state.currentCycle });
 
   return (

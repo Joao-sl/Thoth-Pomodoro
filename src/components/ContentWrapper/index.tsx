@@ -7,5 +7,5 @@ type ContentWrapper = {
 export function ContentWrapper({ children }: ContentWrapper) {
   const classNames = `${styles.ContentWrapper}`;
 
-  return <div className={`${classNames} FlexCentralized`}>{children}</div>;
+  return <div className={`${classNames}`}>{children}</div>;
 }

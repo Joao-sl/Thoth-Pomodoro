@@ -1,20 +1,14 @@
-import {
-  AlarmClockIcon,
-  FolderClockIcon,
-  MoonIcon,
-  Settings2Icon,
-  SunIcon,
-} from 'lucide-react';
+import { AlarmClockIcon, FolderClockIcon, MoonIcon, Settings2Icon, SunIcon } from 'lucide-react';
 
 import styles from './style.module.css';
 import { useState, useEffect } from 'react';
+import { MyRouterLink } from '../RouterLink';
 
 type AvailableThemes = 'dark' | 'light';
 
 export function Menu() {
   const [theme, setTheme] = useState<AvailableThemes>(() => {
-    const storageTheme =
-      (localStorage.getItem('theme') as AvailableThemes) || 'dark';
+    const storageTheme = (localStorage.getItem('theme') as AvailableThemes) || 'dark';
 
     return storageTheme;
   });
@@ -41,30 +35,30 @@ export function Menu() {
 
   return (
     <nav className={`${styles.menuWrapper} test`}>
-      <a
-        href='#'
+      <MyRouterLink
+        href='/'
         className={styles.menuLink}
         title='Go to home page'
         aria-label='Go to home page'
       >
         <AlarmClockIcon />
-      </a>
-      <a
-        href='#'
+      </MyRouterLink>
+      <MyRouterLink
+        href='/history'
         className={styles.menuLink}
         title='Go to history'
         aria-label='Go to history'
       >
         <FolderClockIcon />
-      </a>
-      <a
-        href='#'
+      </MyRouterLink>
+      <MyRouterLink
+        href='/settings'
         className={styles.menuLink}
         title='Go to settings'
         aria-label='Go to settings'
       >
         <Settings2Icon />
-      </a>
+      </MyRouterLink>
       <a
         href=''
         className={styles.menuLink}

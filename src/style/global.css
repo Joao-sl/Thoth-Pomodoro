@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: 'Lexend', sans-serif;
+  font-family: var(--primary-font);
   font-size: 1.6rem;
   color: var(--text-default);
   background-color: var(--gray-900);

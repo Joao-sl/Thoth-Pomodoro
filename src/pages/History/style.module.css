@@ -1,0 +1,73 @@
+.marginTop {
+  margin-top: 6rem;
+}
+
+.trashButton button {
+  border: none;
+  border-radius: 0.6rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(223, 13, 13);
+}
+
+.trashButton svg {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.trashButton:hover {
+  filter: brightness(80%);
+}
+
+.responsiveTable {
+  display: flex;
+  justify-content: center;
+  border-radius: 0.6rem;
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.taskType {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.responsiveTable table {
+  width: 100%;
+  max-width: 120rem;
+  min-width: 64rem;
+  border-collapse: collapse;
+}
+
+.responsiveTable th {
+  background-color: var(--gray-600);
+}
+
+.responsiveTable td {
+  background-color: var(--gray-800);
+}
+
+.responsiveTable th,
+.responsiveTable td {
+  border-bottom: 0.2rem solid var(--gray-700);
+  text-align: left;
+  padding: 1.6rem;
+}
+
+.responsiveTable th:first-child {
+  border-top-left-radius: 0.8rem;
+}
+
+.responsiveTable th:last-child {
+  border-top-right-radius: 0.8rem;
+}
+
+
+@media (max-width: 64rem) {
+  .responsiveTable {
+    display: block;
+  }
+}

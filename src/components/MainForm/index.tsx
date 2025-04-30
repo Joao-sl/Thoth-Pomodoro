@@ -4,15 +4,17 @@ import { DefaultButton } from '../DefaultButton';
 import { DefaultInput } from '../DefaultInput';
 import { PlayIcon, TimerReset } from 'lucide-react';
 import { TaskModel } from '../../models/TaskModel';
-import { UserTaskContext } from '../../contexts/TaskContext/useTaskContext';
+import { useTaskContext } from '../../contexts/TaskContext/useTaskContext';
 import { getNextCycle } from '../../utils/getNextCycle';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 import { TaskActionTypes } from '../../contexts/TaskContext/TaskActions';
 import { CycleTipUser } from '../CycleTipUser';
+import { showMessage } from '../../adapters/toustifyAdapter';
 
 export function MainForm() {
-  const { state, dispatch } = UserTaskContext();
+  const { state, dispatch } = useTaskContext();
   const taskNameInput = useRef<HTMLInputElement>(null);
+  const lastTaskName = state.tasks[state.tasks.length - 1]?.name || '';
 
   const nextCycle = getNextCycle(state.currentCycle);
   const nextCycleType = getNextCycleType(nextCycle);
@@ -24,7 +26,8 @@ export function MainForm() {
     const taskName = taskNameInput.current.value.trim();
 
     if (!taskName) {
-      alert('Write the task');
+      showMessage.dismiss();
+      showMessage.warn('Write you task to start');
       return;
     }
 
@@ -55,6 +58,7 @@ export function MainForm() {
           labelText='Task'
           ref={taskNameInput}
           disabled={!!state.activeTask}
+          defaultValue={lastTaskName}
         />
       </div>
 

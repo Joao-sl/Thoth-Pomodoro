@@ -1,9 +1,9 @@
-import { UserTaskContext } from '../../contexts/TaskContext/useTaskContext';
+import { useTaskContext } from '../../contexts/TaskContext/useTaskContext';
 import { getNextCycle } from '../../utils/getNextCycle';
 import { getNextCycleType } from '../../utils/getNextCycleType';
 
 export function CycleTipUser() {
-  const { state } = UserTaskContext();
+  const { state } = useTaskContext();
   const nextCycle = getNextCycle(state.currentCycle);
   const nextCycleType = getNextCycleType(nextCycle);
 

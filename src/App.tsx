@@ -1,8 +1,6 @@
+import { ToastifyWrapper } from './components/ToastifyWrapper';
 import { TaskContextProvider } from './contexts/TaskContext/TaskContextProvider';
-import { Home } from './pages/Home';
-
-// import { LearnPomodoro } from './pages/LearnPomodoro';
-// import { NotFound } from './pages/NotFound';
+import { MainRouter } from './routers/MainRouter';
 
 import './style/global.css';
 import './style/theme.css';
@@ -10,7 +8,9 @@ import './style/theme.css';
 export function App() {
   return (
     <TaskContextProvider>
-      <Home />
+      <ToastifyWrapper>
+        <MainRouter />
+      </ToastifyWrapper>
     </TaskContextProvider>
   );
 }
