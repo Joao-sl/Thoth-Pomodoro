@@ -16,12 +16,12 @@
   --primary-font: 'Lexend', sans-serif;
 
   --link-color: #cf6b07;
-  --link-hover: #0b8a60;
+  --link-hover: #ffb300;
 
-  --success: #27e90d;
-  --warning: #FFBC11;
-  --error: #e41313;
-  --info: #0a80ee;
+  --success: #4caf50;
+  --warning: #ffca28;
+  --error: #e53935;
+  --info: #039be5;
 
   --text-over-primary: #0a0f1a;
   --text-over-primary-light: #e6e9f0;
@@ -68,10 +68,8 @@
   --gray-800: #cdd3e1;
   --gray-900: #e6e9f0;
 
-  --text-default: #0a0f1a;
-  --text-muted: #272f43;
-
   --text-default: #1b1a1a;
+  --text-muted: #272f43;
 
   --cycles-small-break: #9e5705;
 

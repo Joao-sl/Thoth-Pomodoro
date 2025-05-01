@@ -1,4 +1,4 @@
-import { AlarmClockIcon, FolderClockIcon, MoonIcon, Settings2Icon, SunIcon } from 'lucide-react';
+import { ClipboardList, Clock, MoonIcon, Settings, SunIcon } from 'lucide-react';
 
 import styles from './style.module.css';
 import { useState, useEffect } from 'react';
@@ -41,24 +41,27 @@ export function Menu() {
         title='Go to home page'
         aria-label='Go to home page'
       >
-        <AlarmClockIcon />
+        <Clock />
       </MyRouterLink>
+
       <MyRouterLink
         href='/history'
         className={styles.menuLink}
         title='Go to history'
         aria-label='Go to history'
       >
-        <FolderClockIcon />
+        <ClipboardList />
       </MyRouterLink>
+
       <MyRouterLink
         href='/settings'
         className={styles.menuLink}
         title='Go to settings'
         aria-label='Go to settings'
       >
-        <Settings2Icon />
+        <Settings />
       </MyRouterLink>
+
       <a
         href=''
         className={styles.menuLink}

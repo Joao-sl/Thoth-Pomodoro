@@ -19,6 +19,6 @@
 }
 
 .footer>p>a {
-  color: red;
+  color: var(--primary);
   text-decoration: none;
 }

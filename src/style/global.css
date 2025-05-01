@@ -11,7 +11,7 @@ body {
   font-family: var(--primary-font);
   font-size: 1.6rem;
   color: var(--text-default);
-  background-color: var(--gray-900);
+  background: linear-gradient(144deg, var(--gray-800) 64%, var(--gray-700) 90%);
 }
 
 .FlexCentralized {
